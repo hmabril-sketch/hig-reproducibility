@@ -1,0 +1,17 @@
+train slices (1712, 192, 192) test slices (916, 192, 192)
+epoch 1 loss 1.6156 178 s
+epoch 2 loss 0.8674 353 s
+epoch 3 loss 0.4399 580 s
+epoch 4 loss 0.3077 758 s
+epoch 5 loss 0.2521 938 s
+epoch 6 loss 0.2247 1162 s
+epoch 7 loss 0.2157 1337 s
+epoch 8 loss 0.1948 1515 s
+epoch 9 loss 0.1906 1686 s
+epoch 10 loss 0.1759 1867 s
+epoch 11 loss 0.1699 2043 s
+epoch 12 loss 0.1664 2218 s
+epoch 13 loss 0.1624 2400 s
+epoch 14 loss 0.1573 2576 s
+epoch 15 loss 0.1510 2753 s
+epoch 16 loss 0.1532 2937 s

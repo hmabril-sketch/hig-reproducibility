@@ -1,0 +1,18 @@
+# Code of the paper (code/)
+numpy>=1.26
+scipy>=1.11
+pandas>=2.1
+networkx>=3.2
+numba>=0.59
+scikit-image>=0.22
+matplotlib>=3.8
+Pillow>=10
+# ACDC experiments only (training, prediction): PyTorch (CPU is enough) and NIfTI reading
+torch>=2.1
+nibabel>=5.1
+# Betti matching: build https://github.com/nstucki/Betti-Matching-3D (needs pybind11 and cmake), see README
+pybind11>=2.11
+# Interactive notebooks (notebooks/)
+gradio>=4,<6
+jupyter>=1.0
+nbconvert>=7

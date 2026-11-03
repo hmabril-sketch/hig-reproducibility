@@ -1,0 +1,22 @@
+name: hig-reproducibility
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=1.26
+  - scipy>=1.11
+  - pandas>=2.1
+  - networkx>=3.2
+  - numba>=0.59
+  - scikit-image>=0.22
+  - matplotlib>=3.8
+  - pillow>=10
+  - pytorch>=2.1
+  - nibabel>=5.1
+  - pybind11>=2.11
+  - cmake
+  - jupyter
+  - nbconvert>=7
+  - pip
+  - pip:
+      - gradio>=4,<6

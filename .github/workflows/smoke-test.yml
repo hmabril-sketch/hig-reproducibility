@@ -1,0 +1,32 @@
+name: smoke-test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: code
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies (no PyTorch or Betti matching needed here)
+        run: pip install numpy scipy pandas networkx numba Pillow
+      - name: HIG construction (Fig. 1 / Fig. 4, compiled vs reference, cut nodes = holes)
+        run: python smoke_test.py
+      - name: Sec. 5.1 node counts, recomputed
+        run: |
+          python sec51_node_counts.py /tmp/node_counts.csv
+          python -c "import pandas as pd; a=pd.read_csv('/tmp/node_counts.csv'); b=pd.read_csv('../results/sec51/node_counts.csv'); pd.testing.assert_frame_equal(a, b); print('node counts identical')"
+      - name: Table 1, recomputed
+        run: |
+          python sec52_rag_classes.py /tmp/table1.csv
+          python -c "import pandas as pd; a=pd.read_csv('/tmp/table1.csv'); b=pd.read_csv('../results/sec52/table1.csv'); pd.testing.assert_frame_equal(a, b); print('Table 1 identical')"
+      - name: Every number of Sec. 5 from the committed results
+        run: python paper_numbers.py

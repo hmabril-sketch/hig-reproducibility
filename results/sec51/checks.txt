@@ -1,0 +1,3 @@
+benchmark (10x10 and enlarged) + perturbations: segmentations 9063, Euler identity fails 0, regions with cut nodes != holes 0, holes 14442
++ ACDC references, 8 prediction sets and perturbed references: segmentations 21019, Euler identity fails 0, regions with cut nodes != holes 0, holes 42419
++ 900 quantized images: segmentations 21919, Euler identity fails 0, regions with cut nodes != holes 0, holes 116595

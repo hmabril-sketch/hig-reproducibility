@@ -1,0 +1,7 @@
+graph,classes,pairs_same_graph,separated_by_hig,sep_holes,sep_multiplicities,sep_junction_or_enclosing,same_hig_different_graph
+Simple RAG,894,1913.0,1166.0,1010.0,69.0,87.0,0.0
+RAG with OUT,1088,761.0,14.0,14.0,0.0,0.0,0.0
+RAG with corner contacts,927,1799.0,1052.0,936.0,34.0,82.0,0.0
+RAG with corner contacts and OUT,1096,750.0,3.0,0.0,3.0,0.0,0.0
+Both RAGs with OUT,1099,747.0,0.0,,,,
+HIG,1099,,,,,,
