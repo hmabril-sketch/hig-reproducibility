@@ -2,7 +2,7 @@
 
 Code, trained weights and reference results for
 
-> F. Díaz-del-Río, P. Sánchez-Cuevas, M. J. Morón-Fernández, H. Molina-Abril, P. Real.
+> F. Díaz-del-Río, M. J. Morón-Fernández, H. Molina-Abril, P. Real.
 > *Homological Incidence Graph (HIG): a topology-aware representation for segmented images.*
 > Submitted to the Journal of Mathematical Imaging and Vision.
 
